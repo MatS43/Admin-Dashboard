@@ -1,24 +1,93 @@
+html{
+    height: 100%;
+}
 body{
+    height: 100%;
+    margin: 0;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 0.6fr 4fr;
     grid-template-rows: 1fr 4.5fr;
 }
 .sidebar{
-    background-color: blue;
+    background-color: #1892d3;
     grid-column: 1/2;
     grid-row: 1/3;
+    display: grid;
+    grid-template-rows: 1fr 4fr 2fr 4fr;
+}
+.sidebar h1{
+    color: #ffffff;
+    font-family: Roboto sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+.sidebar ul li {
+    color: #ffffff;
+    list-style-type: none;
+    padding: 0; 
+    margin: 0;
+    font-family: Roboto sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.sidebar h1, .sidebar ul{
+    padding-left: 20px;
 }
 .header{
-    background-color: grey;
+    background-color: rgba(236, 225, 225, 0.902);
     grid-column: 2/3;
     grid-row: 1/2;
+    border-bottom: 1px solid grey;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: black;
+}
+.header button{
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #1991d1;
+    color: white;
+    font-family: Roboto, sans-serif;
+    width: 70px;
+    height: 25px;
+}
+.header button:nth-of-type(2){
+    width: 80px;
+}
+.text{
+    font-size: 10px;
+}
+.text p{
+    margin: 0px;
+}
+.text p:nth-of-type(2){
+    font-size: 14px;
+}
+.header input{
+    height: 20px;
+}
+.header input{
+    border-radius: 15px;
+    border: none;
+    background-color: grey;
+}
+.header p{
+    font-family: Roboto, sans-serif;
 }
 .content{
     background-color: white;
     grid-column: 2/3;
     grid-row: 2/3;
     display: grid;
-    grid-template-columns: 1.3fr 1fr;
+    grid-template-columns: 2fr 1fr;
 }
 .your-projects{
     grid-column: 1/2;
